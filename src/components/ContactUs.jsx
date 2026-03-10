@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const formFields = [
@@ -14,6 +14,8 @@ const contactInfo = [
     { icon: MapPin, text: "The Yoga Shala Düsseldorf · Bogenstraße 22 · 40227 Düsseldorf" },
 ];
 
+
+
 const ContactUs = () => {
 
     const [form, setForm] = useState({
@@ -25,6 +27,22 @@ const ContactUs = () => {
     });
 
     const [errors, setErrors] = useState({});
+
+
+    useEffect(() => {
+        const handleSelectClass = (e) => {
+            setForm((prev) => ({
+                ...prev,
+                classType: e.detail,
+            }));
+        };
+
+        window.addEventListener("selectClass", handleSelectClass);
+
+        return () => {
+            window.removeEventListener("selectClass", handleSelectClass);
+        };
+    }, []);
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -133,9 +151,13 @@ const ContactUs = () => {
                                 className="w-full border rounded-md px-4 md:px-4 py-2 md:py-2.5 3xl:py-3 outline-none border-black/10 focus:border-black"
                             >
                                 <option value="">Select...</option>
-                                <option>Beginner Yoga</option>
-                                <option>Intermediate Yoga</option>
-                                <option>Advanced Yoga</option>
+                                <option value="Private Yoga Session">Private Yoga Session</option>
+                                <option value="Prenatal Yoga">Prenatal Yoga</option>
+                                <option value="Postnatal Yoga">Postnatal Yoga</option>
+                                <option value="Ayurvedic Cooking">Ayurvedic Cooking</option>
+                                <option value="Family Yoga">Family Yoga</option>
+                                <option value="Yoga for Sports & Artists">Yoga for Sports & Artists</option>
+                                <option value="Corporate Yoga">Corporate Yoga</option>
                             </select>
 
                             {errors.classType && (
