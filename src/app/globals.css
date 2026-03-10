@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: var(--font-fraunces);
+  --font-body: var(--font-dmSans);
+}
+
+body {
+  font-family: var(--font-dmSans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+   font-family: var(--font-fraunces);
+}
+
+.font-heading {
+   font-family: var(--font-fraunces);
+  font-optical-sizing: auto;
+}
+.font-body {
+  font-family: var(--font-dmSans);
+}
+.font-inter {
+  font-family: var(--font-inter);
+}
+@theme {
+  --breakpoint-3xl: 106.25rem;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@utility spacing {
+  @apply px-3 sm:px-12 md:px-14 lg:px-0 xl:px-0;
+}
+@utility max-width{
+  @apply flex  md:max-w-[100%] mx-auto xl:max-w-[90%] 2xl:max-w-[90%] 3xl:max-w-[90%] w-full;
+}
+
+.swiper {
+  width: 100%;
+}
