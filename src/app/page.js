@@ -92,9 +92,6 @@ const page = () => {
 
               </div>
             </div>
-
-
-
           </div>
         </div>
       </div>
@@ -118,7 +115,7 @@ const page = () => {
               </h2>
 
               <p className="text-base md:text-[18px] 3xl:text-xl md:leading-6 3xl:leading-6.5 3xl:max-w-180">
-                Ladakh, India's "Land of High Passes", is a place that works on you.
+                Ladakh, India&apos;s "Land of High Passes", is a place that works on you.
                 This retreat is an invitation to slow your body down, soften your
                 nervous system and let the nature recalibrate something deeper.
               </p>
@@ -216,7 +213,7 @@ const page = () => {
             <img
               src='/yoga4.png'
               alt="Meditation"
-             className="absolute max-lg:left-1/2 max-lg:-translate-x-1/2 lg:right-80 2xl:right-[400px] 3xl:right-110 -top-20 md:-top-30 lg:top-[30%] size-38 md:size-60 lg:size-60 3xl:size-85 rounded-full object-cover"
+              className="absolute max-lg:left-1/2 max-lg:-translate-x-1/2 lg:right-80 2xl:right-[400px] 3xl:right-110 -top-20 md:-top-30 lg:top-[30%] size-38 md:size-60 lg:size-60 3xl:size-85 rounded-full object-cover"
             />
 
           </div>

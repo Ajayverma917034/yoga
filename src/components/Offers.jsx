@@ -1,3 +1,5 @@
+'use client'
+
 import { Check } from 'lucide-react';
 import React from 'react'
 const offersData = [
@@ -6,6 +8,7 @@ const offersData = [
         items: [
             {
                 title: "Private Yoga Sessions",
+                value: "Private Yoga Session",
                 img: "/offer/offer-1.png",
                 height: "h-106 3xl:h-140",
                 description:
@@ -18,6 +21,7 @@ const offersData = [
             },
             {
                 title: "Yoga for Sportsperson & Artists",
+                value: "Yoga for Sports & Artists",
                 img: "/offer/offer-2.png",
                 height: "h-106  3xl:h-140",
                 description:
@@ -35,6 +39,7 @@ const offersData = [
         items: [
             {
                 title: "Family Yoga (Parents & Kids)",
+                value: "Family Yoga",
                 img: "/offer/offer-3.png",
                 height: "h-[537px] 3xl:h-[630px]",
                 description:
@@ -47,6 +52,7 @@ const offersData = [
             },
             {
                 title: "Business/Corporate Yoga",
+                value: "Corporate Yoga",
                 img: "/offer/offer-4.png",
                 height: "h-[418px]  3xl:h-[520px]",
                 description:
@@ -64,6 +70,7 @@ const offersData = [
         items: [
             {
                 title: "Prenatal Yoga",
+                value: "Prenatal Yoga",
                 img: "/offer/offer-5.png",
                 height: "h-[342px] 3xl:h-[420px] ",
                 description:
@@ -71,6 +78,7 @@ const offersData = [
             },
             {
                 title: "Postnatal Yoga",
+                value: "Postnatal Yoga",
                 img: "/offer/offer-6.png",
                 height: "h-[342px]  3xl:h-[420px] ",
                 description:
@@ -78,6 +86,7 @@ const offersData = [
             },
             {
                 title: "Ayurvedic Cooking",
+                value: "Ayurvedic Cooking",
                 img: "/offer/offer-7.png",
                 height: "h-[342px]  3xl:h-[420px] ",
                 description:
@@ -100,6 +109,16 @@ const Offers = () => {
                             {col.items.map((item, index) => (
                                 <div
                                     key={index}
+                                    onClick={() => {
+                                        const contact = document.getElementById("contact");
+                                        contact?.scrollIntoView({ behavior: "smooth" });
+
+                                        window.dispatchEvent(
+                                            new CustomEvent("selectClass", {
+                                                detail: item.value,
+                                            })
+                                        );
+                                    }}
                                     className={`relative ${item.height} overflow-hidden group cursor-pointer`}
                                 >
                                     {/* Image — subtle scale on hover */}
@@ -141,7 +160,7 @@ const Offers = () => {
 
                                     {/* Get Started button — absolutely pinned to bottom-right, always on top of overlay */}
                                     <div className="absolute bottom-4 right-5 z-10 hidden md:block opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 delay-200 ease-out">
-                                        <button className="bg-white text-black text-sm 3xl:text-base px-4 py-2 rounded-lg hover:bg-neutral-100 transition-colors duration-200 min-w-42 mx-auto font-inter">
+                                        <button className="bg-white text-black text-sm 3xl:text-base px-4 py-2 rounded-lg hover:bg-neutral-100 transition-colors duration-200 min-w-42 mx-auto font-inter cursor-pointer">
                                             Get Started
                                         </button>
                                     </div>

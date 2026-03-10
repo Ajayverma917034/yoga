@@ -87,7 +87,7 @@ const Testimonials = () => {
                         breakpoints={{
                             0: { slidesPerView: 1 },
                             640: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3.5 },
+                            1024: { slidesPerView: 2.5 },
                         }}
                     >
                         {baseReviews.map((item, index) => (
@@ -140,7 +140,7 @@ const Testimonials = () => {
                             className="w-14 h-14 rounded-full bg-[#1a1a1a] text-white flex items-center justify-center hover:bg-[#333] transition-colors duration-200 focus:outline-none text-4xl rotate-180"
                             aria-label="Previous slide"
                         >
-                             ➝
+                            ➝
                         </button>
 
                         <button
