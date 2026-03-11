@@ -17,10 +17,17 @@ h1, h2, h3 {
    font-family: var(--font-fraunces);
 }
 
-.font-heading {
+/* .font-heading {
    font-family: var(--font-fraunces);
   font-optical-sizing: auto;
+} */
+
+.font-heading {
+  font-family: var(--font-fraunces);
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144;
 }
+
 .font-body {
   font-family: var(--font-dmSans);
 }
@@ -43,7 +50,7 @@ h1, h2, h3 {
   @apply px-3 sm:px-12 md:px-14 lg:px-0 xl:px-0;
 }
 @utility max-width{
-  @apply flex  md:max-w-[100%] mx-auto xl:max-w-[90%] 2xl:max-w-[90%] 3xl:max-w-[90%] w-full;
+  @apply flex  md:max-w-full mx-auto xl:max-w-[90%] 2xl:max-w-[90%] 3xl:max-w-[90%] w-full;
 }
 
 .swiper {

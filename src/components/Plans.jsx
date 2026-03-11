@@ -45,19 +45,19 @@ const Plans = () => {
     return (
         <div className="w-full py-4 md:py-16 lg:py-25 2xl:py-35 px-2 md:px-6">
 
-            <h5 className="text-2xl md:text-[32px] lg:text-5xl 2xl:text-[52px] font-semibold text-center mb-12 md:mb-14 lg:mb-16 font-inter">
+            <h5 className="font-heading text-2xl md:text-[32px] lg:text-[52px] font-semibold text-center mb-12 md:mb-14 lg:mb-16 leading-[61.95px]">
                 Find Your Perfect Plan
             </h5>
 
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-10 2xl:gap-12 3xl:gap-14 justify-center items-stretch">
                 {plansData.map((plan, index) => (
-                    <div key={index} className={`w-full max-w-125 max-lg:mx-auto 3xl:max-w-140 min-h-full rounded-2xl md:rounded-3xl 3xl:rounded-[28px] p-6 lg:p-8 lg:py-12 3xl:p-[44px] shadow-sm ${plan.cardClass}`}>
+                    <div key={index} className={`w-full max-w-125 max-lg:mx-auto xl:max-w-130 3xl:max-w-145 min-h-full rounded-2xl md:rounded-3xl 3xl:rounded-[28px] p-6 lg:p-8 lg:py-12 3xl:p-[44px] shadow-sm ${plan.cardClass}`}>
 
                         <div className={`size-12 md:size-15 rounded-xl md:rounded-2xl 3xl:rounded-3xl flex items-center justify-center mb-4 ${plan.iconClass}`}>
                             <Image alt='Icon' src={plan.icon} width={36} height={36} className=' object-contain w-8 md:w-9 h-full' />
                         </div>
 
-                        <h2 className="text-2xl md:text-4xl font-inter 3xl:text-[40px] leading-[100%] leading-[-1.12px] font-semibold mb-3">
+                        <h2 className="text-2xl md:text-4xl font-heading 3xl:text-[40px]  leading-[-1.12px] font-semibold mb-3">
                             {plan.title}
                         </h2>
 
