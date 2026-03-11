@@ -25,7 +25,7 @@ const Testimonials = () => {
         {
             name: "Daniela Morales Soto",
             image: "/c489047963d06c23a09ef782f1e8c41a88eabcc6.jpg",
-            text: "Smriti has been an incredible Ashtanga yoga teacher for me. She explains everything so clearly and thoughtfully, which has helped me understand not just the poses but the practice as a whole. I am so grateful for her guidance.",
+            text: "Smriti has been an incredible Ashtanga yoga teacher for me. She explains everything so clearly and thoughtfully, which has helped me understand not just the poses but the practice as a whole. She has been accompanying my yoga journey for almost a year now, and I’m so grateful for her guidance, patience, and encouragement along the way. I’m super happy to have found her and would definitely recommend her to anyone, whether you’re new to Ashtanga or looking to deepen your practice.",
         },
         {
             name: "Ekta K.",
@@ -35,17 +35,17 @@ const Testimonials = () => {
         {
             name: "Elena",
             image: "/c489047963d06c23a09ef782f1e8c41a88eabcc6.jpg",
-            text: "Smriti is a wonderful yoga teacher - knowledgeable, supportive and truly attentive. She creates a safe & encouraging atmosphere where you can move forward in your practice at your own pace. Highly recommend to anyone looking for a thoughtful and skilled teacher.",
+            text: "Smriti is a wonderful yoga teacher - knowledgeable, supportive and truly attentive. She creates a safe & encouraging atmosphere where you can move forward in your practice at your own pace. She cares about correct execution of the asanas and offers adjustments when needed to ensure a safe practice.I’ve been practicing with her for a year now and discovered Ashtanga Yoga as an optimal yoga style and sport for me. I became stronger and feel much more balanced and grounded mentally.",
         },
         {
             name: "Maja K.",
             image: "/c489047963d06c23a09ef782f1e8c41a88eabcc6.jpg",
-            text: "Smriti is more than a teacher. She is a warm soul that spreads light on her students' dark moments, reminds them to accept their errors because they are lessons. I am lucky to have found her.",
+            text: "Smriti is more than a teacher. She is a warm soul that spreads light on her students’ dark moments, reminds them to accept their errors because they are lessons. I am lucky to have found her.",
         },
         {
             name: "Irina Hildebrandt",
             image: "/c489047963d06c23a09ef782f1e8c41a88eabcc6.jpg",
-            text: "I've been practicing Ashtanga Yoga with Smriti for about a year now and am very grateful for her guidance. Her classes are clearly structured, mindful, and challenging. I particularly appreciate how she tailors her teaching to each student individually.",
+            text: "I've been practicing Ashtanga Yoga with Smriti for about a year now and am very grateful for her guidance. Her classes are clearly structured, mindful, and challenging. I particularly appreciate her precise instructions and respectful adjustments, which have helped me deepen my practice both physically and mentally. You can feel her experience, her presence, and her genuine appreciation for each person's individual path. For me, the classes have become an integral and enriching part of my daily life.",
         },
         {
             name: "Shimonti S.",
@@ -55,7 +55,7 @@ const Testimonials = () => {
         {
             name: "Lara Berens",
             image: "/c489047963d06c23a09ef782f1e8c41a88eabcc6.jpg",
-            text: "I can highly recommend Smriti as a yoga teacher. She is incredibly attentive, supportive, and really takes the time to understand individual needs. She is fantastic for beginners and experienced practitioners alike.",
+            text: "I can highly recommend Smriti as a yoga teacher. She is incredibly attentive, supportive, and really takes the time to understand individual needs. She is fantastic for beginners, as she explains things clearly and is always willing to help. Her Ashtanga classes have helped me not only physically, as I feel much stronger and more flexible, but also mentally, bringing a sense of calm and balance into my everyday life. A truly great teacher, and I would recommend her to anyone, even if they have never practiced Ashtanga yoga.",
         },
     ];
 
@@ -111,7 +111,6 @@ const Testimonials = () => {
                                                     </button>
                                                 </>
                                             )}
-                                            &rdquo;
                                         </p>
                                     </div>
 

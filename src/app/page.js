@@ -21,13 +21,15 @@ const page = () => {
                   fill
                   priority
                   sizes="100vw"
-                  className="object-cover"
+                  className="object-cover "
+                // className="object-cover opacity-[0.9]"
                 />
+                <div className="absolute inset-0 bg-black/60 opacity-80"></div>
               </div>
 
               {/* Text */}
               <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-                <h1 className="font-heading  text-white text-[22px] sm:text-[30px] md:text-[36px] lg:text-[46px] 3xl:text-6xl">
+                <h1 className="font-heading  text-white text-[22px] sm:text-[30px] md:text-[36px] lg:text-[40px] 2xl:text-[46px] 3xl:text-6xl leading-[24px]">
                   Ashtanga Vinyasa, Hatha, Pre & Postnatal Yoga Teacher
                 </h1>
               </div>
@@ -37,7 +39,7 @@ const page = () => {
           <div className='space-y-16 md:space-y-50 pb-20 md:pb-40'>
             <div className="flex max-lg:flex-col justify-between xl:items-center space-y-0 max-xl:space-y-4">
               <div className="md:max-w-144.5 3xl:max-w-190">
-                <h2 className="font-heading font-bold text-2xl md:text-[44px] 2xl:text-5xl 3xl:text-6xl md:leading-12 2xl:leading-15 3xl:leading-18 tracking-[-0.02em] md:tracking-[-2px] text-[#363636] mb-3 md:mb-6 3xl:mb-10">
+                <h2 className="font-heading font-bold text-2xl md:text-[44px] xl:text-5xl 3xl:text-6xl md:leading-12 2xl:leading-15 3xl:leading-18 tracking-[-0.02em] md:tracking-[-2px] text-[#363636] mb-3 md:mb-6 3xl:mb-10">
                   Are you feeling drained <br /> and running on empty?
                 </h2>
                 <p className="text-lg md:text-[20px] 3xl:text-2xl md:leading-8 3xl:leading-9 text-[#363636] mb-4">
@@ -46,14 +48,12 @@ const page = () => {
                   <br />
                   Yoga can help you <strong>breathe, sleep, and move through life with more ease.</strong> My own daily yoga practice has taught me how to meet life with open eyes, bringing me a sense of calm and acceptance I never thought possible—and I’d love to help you find that too
                 </p>
-
-
               </div>
 
               <div className="flex justify-center 2xl:pr-10">
-                <div className="w-[90vw] sm:w-100 md:w-120 2xl:w-130 3xl:w-150 xl:max-h-125 2xl:max-h-147.5 3xl:max-h-170 aspect-518/590 relative">
+                <div className="w-[90vw] sm:w-100 md:w-120 xl:w-125 2xl:w-130 3xl:w-150 xl:max-h-130 2xl:max-h-147.5 3xl:max-h-170 aspect-518/590 relative">
                   <Image
-                    src="/yoga1.jpg"
+                    src="/yoga1.png"
                     alt="Yoga"
                     fill
                     className="object-contain"
@@ -66,18 +66,18 @@ const page = () => {
 
 
               <div className="flex justify-center">
-                <div className="w-[90vw] sm:w-100 md:w-120 2xl:w-130 3xl:w-150 xl:max-h-125 2xl:max-h-147.5 3xl:max-h-170 aspect-518/590 relative">
+                <div className="w-[90vw] sm:w-100 md:w-120 xl:w-125 2xl:w-130 3xl:w-150 xl:max-h-130 2xl:max-h-147.5 3xl:max-h-170 aspect-518/590 relative">
                   <Image
-                    src="/yoga2.jpg"
+                    src="/yoga2.png"
                     alt="Yoga"
                     fill
-                    className="object-contain"
+                    className="object-contain 2xl:object-cover"
                   />
                 </div>
               </div>
               <div className='w-full lg:justify-end flex'>
                 <div className="max-w-150 3xl:max-w-220 xl:pr-2">
-                  <h2 className="font-heading font-bold text-2xl md:text-[44px] 2xl:text-5xl 3xl:text-6xl md:leading-12 2xl:leading-15 3xl:leading-18 tracking-[-0.02em] md:tracking-[-2px] text-[#363636] mb-3 md:mb-6 3xl:mb-10">
+                  <h2 className="font-heading font-bold text-2xl md:text-[44px] xl:text-5xl 3xl:text-6xl md:leading-12 2xl:leading-15 3xl:leading-18 tracking-[-0.02em] md:tracking-[-2px] text-[#363636] mb-3 md:mb-6 3xl:mb-10">
                     Welcome.
                   </h2>
 
@@ -97,7 +97,7 @@ const page = () => {
       </div>
       <Offers />
       <Testimonials />
-      <div className='w-full bg-[#e0ddd2]'>
+      <div className='w-full bg-[#e0ddd2]' id="events">
         <div className="py-20 3xl:py-26 max-width spacing flex flex-col">
           <div className='flex flex-col lg:flex-row gap-10 lg:gap-17.5'>
 
@@ -223,7 +223,7 @@ const page = () => {
       <div className='w-full bg-[#e0ddd2]'>
         <div className="py-24 3xl:py-30 max-width spacing flex flex-col items-center gap-16 ">
 
-          <h1 className="text-2xl md:text-[28px] xl:text-[48px] font-inter font-semibold text-center max-w-[1200px] mx-auto xl:leading-15">
+          <h1 className="text-2xl md:text-[28px] xl:text-[48px] font-heading font-semibold text-center max-w-[1200px] mx-auto xl:leading-[61.5px]">
             Ashtanga Practitioners Intensive with Kino MacGregor and Tim Feldmann
           </h1>
 

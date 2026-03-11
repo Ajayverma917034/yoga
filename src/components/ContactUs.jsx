@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 
 const formFields = [
     { name: "name", label: "Full Name", type: "text", placeholder: "Your Name", required: true },
@@ -75,7 +75,7 @@ const ContactUs = () => {
 
                 {/* LEFT */}
                 <div>
-                    <h1 className="font-inter text-3xl md:text-[40px] xl:text-5xl 2xl:text-[50px] 3xl:text-6xl font-semibold 2xl:leading-13.5 3xl:leading-16 mb-12 max-w-sm 2xl:max-w-lg 3xl:max-w-135">
+                    <h1 className="font-heading text-3xl md:text-[40px] xl:text-5xl 2xl:text-[52px] 3xl:text-6xl font-semibold 2xl:leading-13.5 3xl:leading-16 mb-12 max-w-sm 2xl:max-w-lg 3xl:max-w-135">
                         Guidance you can trust for a balanced mind
                     </h1>
 
@@ -139,26 +139,30 @@ const ContactUs = () => {
                         ))}
 
                         {/* Select */}
-                        <div>
+                        <div >
                             <label className="block text-sm 3xl:text-base mb-2">
                                 Kind of Classes <span className="text-red-500">*</span>
                             </label>
+                            <div className="relative">
+                                <select
+                                    name="classType"
+                                    value={form.classType}
+                                    onChange={handleChange}
+                                    className="w-full border rounded-md px-4 md:px-4 py-2 md:py-2.5 3xl:py-3 outline-none border-black/10 focus:border-black appearance-none  "
+                                >
+                                    <option value="">Select...</option>
+                                    <option value="Private Yoga Session">Private Yoga Session</option>
+                                    <option value="Prenatal Yoga">Prenatal Yoga</option>
+                                    <option value="Postnatal Yoga">Postnatal Yoga</option>
+                                    <option value="Ayurvedic Cooking">Ayurvedic Cooking</option>
+                                    <option value="Family Yoga">Family Yoga</option>
+                                    <option value="Yoga for Sports & Artists">Yoga for Sports & Artists</option>
+                                    <option value="Corporate Yoga">Corporate Yoga</option>
+                                </select>
+                                 <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-black pointer-events-none" />
+                            </div>
 
-                            <select
-                                name="classType"
-                                value={form.classType}
-                                onChange={handleChange}
-                                className="w-full border rounded-md px-4 md:px-4 py-2 md:py-2.5 3xl:py-3 outline-none border-black/10 focus:border-black"
-                            >
-                                <option value="">Select...</option>
-                                <option value="Private Yoga Session">Private Yoga Session</option>
-                                <option value="Prenatal Yoga">Prenatal Yoga</option>
-                                <option value="Postnatal Yoga">Postnatal Yoga</option>
-                                <option value="Ayurvedic Cooking">Ayurvedic Cooking</option>
-                                <option value="Family Yoga">Family Yoga</option>
-                                <option value="Yoga for Sports & Artists">Yoga for Sports & Artists</option>
-                                <option value="Corporate Yoga">Corporate Yoga</option>
-                            </select>
+                           
 
                             {errors.classType && (
                                 <p className="text-red-500 text-sm mt-1">{errors.classType}</p>

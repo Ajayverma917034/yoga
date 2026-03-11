@@ -12,7 +12,8 @@ import Link from "next/link";
 const menuItems = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
-    { name: "Classes", id: "classes" },
+    { name: "Offerings", id: "classes" },
+    { name: "Events", id: "events" },
     { name: "Contact", id: "contact" },
 ];
 
@@ -48,7 +49,7 @@ const Navbar = () => {
                             <Image src={'/logo.png'} width={50} height={50} alt="Smriti Arya Yoga Logo" className="w-fit h-7 md:h-10 3xl:h-12.5" />  Smriti Arya Yoga
                         </div>
 
-                        <ul className="flex flex-col md:flex-row items-center md:gap-4 xl:gap-6 mt-4 lg:mt-0 text-black-600 font-fraunces text-[16px] tracking-wide cursor-pointer font-heading max-md:hidden">
+                        <ul className="flex flex-col md:flex-row items-center lg:gap-12 mt-4 lg:mt-0 text-black-600 font-fraunces text-[16px] tracking-wide cursor-pointer font-heading max-md:hidden max-w-[473px] ">
                             {menuItems.map((item) => (
                                 <li key={item.id}>
                                     <Link href={`/#${item.id}`}>{item.name}</Link>
