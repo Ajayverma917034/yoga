@@ -178,11 +178,14 @@ const Testimonials = () => {
                         </p>
 
                         <div className="flex items-center gap-3">
-                            <img
+                            {/* <img
                                 src={modalReview.image}
                                 alt={modalReview.name}
                                 className="w-11 h-11 rounded-full object-cover"
-                            />
+                            /> */}
+                            <div className="w-11 h-11 rounded-full object-cover bg-[#D9D9D9]">
+
+                            </div>
                             <h4 className="font-semibold md:text-[18px] text-gray-900">
                                 {modalReview.name}
                             </h4>

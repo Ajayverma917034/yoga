@@ -1,4 +1,4 @@
-import { Gem, Check } from 'lucide-react'
+"use client"
 import Image from 'next/image';
 import React from 'react'
 
@@ -19,7 +19,7 @@ const plansData = [
             "bg-[#7a5c00]",
         icon: '/icons/bullseye-arrow.png',
         buttonClass:
-            "w-full border-2 border-black py-3 md:py-2.5 3xl:py-4 rounded-lg 3xl:rounded-xl text-base md:text-lg 3xl:text-2xl",
+            "w-full border-2 border-black py-3 md:py-2.5 3xl:py-4 rounded-lg 3xl:rounded-xl text-base md:text-lg 3xl:text-2xl cursor-pointer",
     },
     {
         title: "Personal Training Online",
@@ -37,7 +37,7 @@ const plansData = [
             "bg-white",
         icon: '/icons/gem.png',
         buttonClass:
-            "w-full bg-black text-white py-3 md:py-4 rounded-xl text-base md:text-lg",
+            "w-full border-2 border-black py-3 md:py-2.5 3xl:py-4 rounded-lg 3xl:rounded-xl text-base md:text-lg 3xl:text-2xl bg-black text-white cursor-pointer",
         divider: true,
     },
 ];
@@ -77,7 +77,10 @@ const Plans = () => {
                             ))}
                         </div>
 
-                        <button className={plan.buttonClass}>
+                        <button onClick={() => {
+                            const contact = document.getElementById("contact");
+                            contact?.scrollIntoView({ behavior: "smooth" });
+                        }} className={plan.buttonClass}>
                             Get Started
                         </button>
 
